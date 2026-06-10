@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+._*
+
+# AI tools
+.claude/
+.codex/
+
+# Editor
+.vscode/
+

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="8" fill="#3F6B4F"/>
+  <!-- leaf shape: curved path -->
+  <path d="M16 6 C22 6 27 11 27 17 C27 23 22 27 16 27 C16 27 9 22 9 16 C9 10 13 6 16 6 Z" fill="#EAF3ED" opacity="0.15"/>
+  <path d="M16 7 C16 7 25 10 25 18 C25 24 20 26 16 26 C16 26 16 16 16 7 Z" fill="#F4F8F5" opacity="0.9"/>
+  <path d="M16 7 C16 7 8 11 9 19 C10 25 15 26 16 26 C16 26 16 16 16 7 Z" fill="#EAF3ED" opacity="0.7"/>
+  <!-- center vein -->
+  <line x1="16" y1="8" x2="16" y2="25" stroke="#3F6B4F" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Claire Liu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="blog-style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a class="nav__logo" href="index.html">claire.dev</a>
+    <ul class="nav__links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="blog-header">
+    <div class="container">
+      <span class="hero__tag">Learning Notes</span>
+      <h1 class="blog-header__title">Blog</h1>
+      <p class="blog-header__sub">Notes on Data Engineering, Web3, and Python — written while learning.</p>
+    </div>
+  </header>
+
+  <!-- FILTERS -->
+  <div class="blog-filters" id="filters">
+    <div class="container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Airflow">Airflow</button>
+      <button class="filter-btn" data-filter="Web3.py">Web3.py</button>
+      <button class="filter-btn" data-filter="dbt">dbt</button>
+      <button class="filter-btn" data-filter="Python">Python</button>
+      <button class="filter-btn" data-filter="Data Pipeline">Data Pipeline</button>
+    </div>
+  </div>
+
+  <!-- POST LIST -->
+  <main class="section">
+    <div class="container">
+      <div class="posts-grid" id="posts-grid">
+
+        <!-- Post cards — add real posts here as you write them -->
+
+        <article class="post-card coming" data-href="posts/airflow-dag-patterns.html" data-cat="Airflow">
+          <div class="post-card__header">
+            <span class="blog-card__cat">Airflow</span>
+            <span class="post-card__status">Coming soon</span>
+          </div>
+          <h2 class="post-card__title">Getting Started with Apache Airflow: DAG Design Patterns</h2>
+          <p class="post-card__excerpt">
+            Setting up Airflow locally with Docker Compose, writing your first DAG,
+            and common patterns for ETL pipelines — including sensors, XComs, and dynamic task mapping.
+          </p>
+          <div class="post-card__footer">
+            <span class="post-card__tags">
+              <span class="tag tag--sm">Airflow</span>
+              <span class="tag tag--sm">ETL</span>
+              <span class="tag tag--sm">Docker</span>
+            </span>
+          </div>
+        </article>
+
+        <article class="post-card coming" data-href="posts/web3py-onchain-events.html" data-cat="Web3.py">
+          <div class="post-card__header">
+            <span class="blog-card__cat">Web3.py</span>
+            <span class="post-card__status">Coming soon</span>
+          </div>
+          <h2 class="post-card__title">Reading On-Chain Events with Web3.py</h2>
+          <p class="post-card__excerpt">
+            How to connect to an Ethereum node via Infura, subscribe to contract events,
+            decode ABI-encoded logs, and persist them into a Postgres table.
+          </p>
+          <div class="post-card__footer">
+            <span class="post-card__tags">
+              <span class="tag tag--sm">Web3.py</span>
+              <span class="tag tag--sm">Ethereum</span>
+              <span class="tag tag--sm">PostgreSQL</span>
+            </span>
+          </div>
+        </article>
+
+        <article class="post-card coming" data-href="posts/dbt-bigquery-intro.html" data-cat="dbt">
+          <div class="post-card__header">
+            <span class="blog-card__cat">dbt</span>
+            <span class="post-card__status">Coming soon</span>
+          </div>
+          <h2 class="post-card__title">dbt + BigQuery: My First Data Transformation Project</h2>
+          <p class="post-card__excerpt">
+            Building a simple analytics layer on top of raw on-chain data using dbt models,
+            tests, and documentation — deployed against BigQuery.
+          </p>
+          <div class="post-card__footer">
+            <span class="post-card__tags">
+              <span class="tag tag--sm">dbt</span>
+              <span class="tag tag--sm">BigQuery</span>
+              <span class="tag tag--sm">Analytics</span>
+            </span>
+          </div>
+        </article>
+
+        <article class="post-card coming" data-href="posts/anomaly-detector.html" data-cat="Python">
+          <div class="post-card__header">
+            <span class="blog-card__cat">Python</span>
+            <span class="post-card__status">Coming soon</span>
+          </div>
+          <h2 class="post-card__title">Building a μ+1.5σ Anomaly Detector from Scratch</h2>
+          <p class="post-card__excerpt">
+            How I designed the dynamic threshold algorithm for the build-monitoring pipeline at Compal —
+            the math, the implementation, and how I tuned it to cut false positives.
+          </p>
+          <div class="post-card__footer">
+            <span class="post-card__tags">
+              <span class="tag tag--sm">Python</span>
+              <span class="tag tag--sm">Statistics</span>
+              <span class="tag tag--sm">Data Pipeline</span>
+            </span>
+          </div>
+        </article>
+
+        <article class="post-card coming" data-href="posts/zero-budget-pipeline.html" data-cat="Data Pipeline">
+          <div class="post-card__header">
+            <span class="blog-card__cat">Data Pipeline</span>
+            <span class="post-card__status">Coming soon</span>
+          </div>
+          <h2 class="post-card__title">Lessons from Building a Zero-Budget Production Pipeline</h2>
+          <p class="post-card__excerpt">
+            Designing a real-time monitoring pipeline with only Google Sheets, Python, and
+            Windows Batch — constraints, trade-offs, and what I'd do differently with cloud infra.
+          </p>
+          <div class="post-card__footer">
+            <span class="post-card__tags">
+              <span class="tag tag--sm">Data Pipeline</span>
+              <span class="tag tag--sm">Google Sheets API</span>
+              <span class="tag tag--sm">Python</span>
+            </span>
+          </div>
+        </article>
+
+        <article class="post-card coming" data-href="posts/defi-indexer.html" data-cat="Web3.py">
+          <div class="post-card__header">
+            <span class="blog-card__cat">Web3.py</span>
+            <span class="post-card__status">Coming soon</span>
+          </div>
+          <h2 class="post-card__title">Indexing DeFi Protocol Events into a Local Database</h2>
+          <p class="post-card__excerpt">
+            A walkthrough of building a lightweight on-chain indexer: fetching Uniswap swap events,
+            decoding them with Web3.py, and loading them into SQLite for local analysis.
+          </p>
+          <div class="post-card__footer">
+            <span class="post-card__tags">
+              <span class="tag tag--sm">Web3.py</span>
+              <span class="tag tag--sm">DeFi</span>
+              <span class="tag tag--sm">SQLite</span>
+            </span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Empty state (hidden by default) -->
+      <div class="posts-empty" id="posts-empty" style="display:none">
+        <p>No posts in this category yet — check back soon.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Yi-Wen (Claire) Liu · <a href="index.html">← Back to home</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
